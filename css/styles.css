@@ -1,0 +1,157 @@
+  html, body {
+    height: 100%;
+    width: 100%;
+    overflow: hidden;
+    background-color: #FAFAFA;
+  }
+
+  #datetime {
+    width: 100%;
+    text-align: center;
+    position: relative;
+    top: 7%;
+  }
+
+  #date{
+    font-size: 5vh;
+    font-family: "BebasBold";
+    color: #888;
+  }
+
+  #time {
+    font-size: 4vh;
+    font-family: "BebasReg";
+    color: #999999;
+  }
+
+  #calendarBox {
+    height: 100%;
+    width: 100%;
+    position: absolute;
+    top: 0;
+    left: 0;
+  }
+
+  #calendar {
+    position: relative;
+    margin: 0 auto;
+    width: 400px;
+    height: 400px;
+    top: 20%;
+    background-color: red;
+  }
+  #menu {
+    height: 200px;
+    width: 50px;
+    background-color: #FAFAFA;
+    position: relative;
+    right: 15%;
+    top: 40%;
+    border: 1px solid #CCC;
+    border-radius: 5px;
+    background-color: blue;
+  }
+
+  #menu h2 {
+    text-align: center;
+    font-family: "BebasBold";
+    color: #888;
+  }
+
+  .handle { 
+    fill: #ccc; 
+  }
+
+  @media only screen 
+    and (min-device-width: 768px) 
+    and (max-device-width: 1024px) 
+    and (orientation: portrait) 
+    and (-webkit-min-device-pixel-ratio: 1) {
+      #menu {
+        right: 0;
+        top: 70%;
+        margin: 0 auto  !important;;
+        width: 50vw;
+        height: 5vh;
+      }
+      #calendar {
+        width: 60vw;
+        height: 60vw;
+        top: 12%;
+      }
+  }
+  
+  @media only screen 
+    and (min-device-width: 768px) 
+    and (max-device-width: 1024px) 
+    and (orientation: landscape) 
+    and (-webkit-min-device-pixel-ratio: 1) {
+      #calendar {
+        width: 50vw;
+        height: 50vw;
+        top: 20%;
+        margin-top: 20px;
+      }
+      #menu {
+        top:45%;
+      }
+  }
+  
+  @media (max-width: 620px) {
+    #menu {
+      margin: 0 auto;
+      top: 80vh;
+      right: 50%;
+      transform: translate(50%, 0);
+      width: 200px;
+      height: 50px;
+    }
+    
+    #calendar {
+      width: 60vw;
+      height: 60vw;
+    }
+  }
+  
+  @media (min-width: 620px) and (orientation: landscape) {
+    #calendar {
+      top:10%;
+    }
+    
+    #menu {
+      right: 0;
+      margin: 0 !important;
+      left: 80%;
+    }
+  }
+  
+  @media only screen and (max-device-width: 480px) {
+    #calendar {
+      width: 80vw;
+      height: 80vw;
+      top: 12%;
+    }
+    
+    #menu {
+      margin: 0 auto !important;
+      top: 75vh;
+      right: 0;
+      width: 60vw;
+      height: 5vh;
+    }
+  }
+  
+  @font-face {
+    font-family: "BebasBold";
+    src: url("../fonts/BebasNeue Bold.otf");
+  }
+
+  @font-face {
+    font-family: "BebasReg";
+    src: url("../fonts/BebasNeue Regular.otf");
+  }
+
+  @font-face {
+    font-family: "Peace";
+    src: url("../fonts/peace.otf");
+  }

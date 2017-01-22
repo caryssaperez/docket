@@ -1,0 +1,1 @@
+This is a circular calendar instead of the traditional linear one.
