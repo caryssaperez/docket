@@ -3,10 +3,19 @@ var express = require('express');
 var path = require('path');
 var bodyParser = require('body-parser');
 var methodOverride = require('method-override');
+var mongoose = require('mongoose');
 
 var app = express(); // Make the express app.
 var clientDir = path.join(__dirname, '/www'); // Create the path to the frontend directory.
 var url = 'mongodb://localhost/SFRelationships'; // Assign the url to the db.
+
+// Connect to the db.
+mongoose.connect(url, function(err) {
+  if(err) {
+    throw err;
+  }
+  console.log("Successfully connected to db.")
+});
 
 // Create express application and assign directory from where to load app.
 // Parse the data posted as JSON and exposes the data to the request's body
