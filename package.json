@@ -1,7 +1,6 @@
 {
    "name": "docket",
    "main": "server.js",
-   "version" : "1.0.0",
    "description": "A circular calendar for my use.",
    "author": "Caryssa Perez <caryssaperez@gmail.com>",
    "repository": {
@@ -10,11 +9,12 @@
    },
    "dependencies": {
      "express" : "~4.14.0",
-     "body-parser" : "~1.15.2",
-     "method-override" : "~2.0.2"        
+     "body-parser": "~1.16.0",
+     "method-override": "~2.3.7",
+     "mongoose": "~4.7.7"    
    },
    "devDependencies": {
-     "mocha": "^2.4.5",
+     "mocha": "^3.2.0",
      "chai": "^3.5.0"
    }
 }
